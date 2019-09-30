@@ -14,39 +14,33 @@
         plug SD card into raspberry and power it on
         if you have a screen it displays the same UI as ev3, for you to setup wifi, browse files/devices
 
-        - connect it to PC host (Tethering)
+        - connect to wifi / PC host
 
-                - With a Wi-Fi dongle to hotpot / router (wifi receiver / wireless internet card, ev3 has screen to login)
-                - With USB mini, connect from ev3 network -> wired, it shows IP (which is different with PC's network -> self-signed ip for it)
-                - With Bluetooth
-                - special for Raspberry
-                        - for no-display, must use wired Ethernet port for the first time through a remote SSH session
-                        - for display connected Raspberry, Ctrl+Alt+F6 at end of boot -> connmanctl -> setup wireless networking
-                                enable wifi
-                                scan wifi
-                                services
-                                agent on
-                                connect xxx
-                                connect xxx_psk
-                                quit
+                - display + keyboard
+                ui -> network -> wifi, press enter when it focuses on password field, than you can use keyboard to input password directly or use its ui input
 
-        - connect it to internet
+                - display + USB mini + ssh + connmanctl
+                ui -> network -> wired, it shows IP (which is different with PC's network -> self-signed ip for it)
 
-                - With a Wi-Fi dongle to hotpot / router (wifi receiver / wireless internet card, ev3 has screen to login)
-                - With USB mini through a PC (add it as device of PC to have its ip -> share internet to it)
-                - With Bluetooth through a PC (add it as device of PC to have its ip -> share internet to it)
-                - With a USB Ethernet adapter (connect to ethernet cable, ssh and setup wifi (connmanctl))
+                - display + bluetooth + ssh + connmanctl
 
-        - connect it to internet if it's ev3 image
-
-                - give it a display screen for ev3 os has builtin UI
-                - press enter when it focuses on password field, than you can use keyboard to input password directly or use its ui input
+                - USB Ethernet adapter / cable + ssh + connmanctl
 
         - ssh
                 ssh robot@x.x.x.x
                 password=maker
                 root password=maker
                 Debian jessie on LEGO MINDSTORMS EV3!
+
+        - connmanctl
+
+                enable wifi
+                scan wifi
+                services
+                agent on
+                connect xxx
+                connect xxx_psk
+                quit
 
         - write some code
 
