@@ -37,10 +37,3 @@
         Java
         e.g. androidthings (raspberry pi)
         e.g. rk3128 (ARM, android / ubuntu)
-
-- todo
-
-        - car DVR
-        - fix disk
-        - connect cars
-        - PSP
