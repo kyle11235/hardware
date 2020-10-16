@@ -37,3 +37,17 @@
         Java
         e.g. androidthings (raspberry pi)
         e.g. rk3128 (ARM, android / ubuntu)
+
+- arduino vs 树莓派
+
+        Arduino 与树莓派 Raspberry Pi 的差异谈不上优缺点，而是他们是两个完全不同的产品
+        1. 产品定位上：Arduino的定位是单片机，侧重IO性能；Raspberry Pi的定位是电脑侧重计算性能
+        2. 运算性能：Arduino以UNO为例是AVR核心的8位单片机，运算频率16Mhz；树莓派3B版为例，是ARM核心的64位微处理器，运算频率1.2GHz 
+        3. IO性能：Arduino包含数字IO和模拟IO,可以连接大量数字和模拟传感器，树莓派只有数字IO
+        4. 开发工具：Arduino以Arduino C语言为开发环境；Raspberry Pi以Python开发为主，，兼顾其他Linux下的开发环境
+        5. 操作系统：Arduino无操作系统；Raspberry Pi一般采用Linux作为操作系统
+        6. 应用领域：Arduino一般用于传感器、设备控制；Raspberry Pi一般作为服务器或运算单元
+
+
+
+
