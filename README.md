@@ -48,6 +48,29 @@
         5. 操作系统：Arduino无操作系统；Raspberry Pi一般采用Linux作为操作系统
         6. 应用领域：Arduino一般用于传感器、设备控制；Raspberry Pi一般作为服务器或运算单元
 
+- solution
 
+        - device
+        
+                - 单片机 -> c，download
+                - arduino -> c++，opensource，IDE，download
+                - lego -> linux，plugin sensor/motor，ev3 lib，Python
+                - raspberry pi -> linux
+                - 安卓 -> android API
+                - PC -> linux
 
+        - communication module
+
+                - Bluetooth（ESP32）
+                - WiFi（ESP32），Ethernet，SIM card
+                - radio（射频编解码，NRF24l01）
+
+        - protocal
+
+                - bluetooth（主设，外设）
+                - HTTP/TCP（server，client）
+                - searial（sender，receiver）
+
+                
+        
 
