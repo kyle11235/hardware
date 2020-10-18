@@ -35,7 +35,7 @@ from time   import sleep
 from random import choice, randint
 
 from ev3dev2.motor import OUTPUT_B, OUTPUT_C, LargeMotor
-from ev3dev2.sensor.lego import InfraredSensor, TouchSensor
+from ev3dev2.sensor.lego import UltrasonicSensor, TouchSensor
 from ev3dev2.button import Button
 from ev3dev2.led import Leds
 from ev3dev2.sound import Sound
@@ -44,7 +44,7 @@ from ev3dev2.sound import Sound
 motors = [LargeMotor(address) for address in (OUTPUT_B, OUTPUT_C)]
 
 # Connect infrared and touch sensors.
-ir = InfraredSensor()
+myul = UltrasonicSensor()
 ts = TouchSensor()
 
 print('Robot Starting')
@@ -67,7 +67,8 @@ def backup():
 
     # Sound backup alarm.
     spkr = Sound()
-    spkr.tone([(1000, 500, 500)] * 3)
+    # spkr.tone([(1000, 500, 500)] * 3)
+    spkr.speak('du du')
 
     # Turn backup lights on:
     leds = Leds()
@@ -123,7 +124,9 @@ while not btn.any():
 
     # Infrared sensor in proximity mode will measure distance to the closest
     # object in front of it.
-    distance = ir.proximity
+    # distance = ir.proximity
+
+    distance = myul.distance_centimeters
 
     if distance > 60:
         # Path is clear, run at full speed.
