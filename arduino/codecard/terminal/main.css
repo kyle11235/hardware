@@ -1,0 +1,46 @@
+/* body {
+  font-size: 14pt;
+  color: white;
+  background-color: white;
+} */
+
+html, body, #term {
+  margin: 0;
+  height: 99%;
+  width: 100%;
+  background-color:black;
+  color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+#notify {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 80px;
+  background-color: gray;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 18pt;
+  color: rgb(183, 183, 183);
+}
+
+#terminal-container .terminal {
+  background-color: white;
+  color: gray;
+  padding: 2px;
+}
+#terminal-container .terminal:focus .terminal-cursor {
+  background-color: #fafafa;
+}
+#connectBtn{
+}
+#status {
+  float: right;
+}
