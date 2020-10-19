@@ -48,13 +48,16 @@
         5. 操作系统：Arduino无操作系统；Raspberry Pi一般采用Linux作为操作系统
         6. 应用领域：Arduino一般用于传感器、设备控制；Raspberry Pi一般作为服务器或运算单元
 
+        - https://pypi.org/project/RPi.GPIO/
+        Note that this module is unsuitable for real-time or timing critical applications. This is because you can not predict when Python will be busy garbage collecting. It also runs under the Linux kernel which is not suitable for real time applications - it is multitasking O/S and another process may be given priority over the CPU, causing jitter in your program. If you are after true real-time performance and predictability, buy yourself an Arduino http://www.arduino.cc !
+
 - solution
 
         - device
         
-                - 单片机 -> c，download
-                - arduino -> c++，opensource，IDE，download
-                - lego -> linux，plugin sensor/motor，ev3 lib，Python
+                - 单片机 -> c, upload
+                - arduino -> c++, opensource，IDE, upload
+                - lego -> linux, plugin sensor/motor, ev3 lib，Python
                 - raspberry pi -> linux
                 - 安卓 -> android API
                 - PC -> linux
